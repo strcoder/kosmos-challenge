@@ -1,0 +1,76 @@
+a {
+  text-decoration: none;
+}
+
+button, a {
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px 14px;
+  text-align: center;
+  font-size: $font-size-base;
+  transition: $transition-base;
+  border-radius: $border-radius;
+  font-family: $font-family-base;
+  & .btn-icon {
+    font-size: $icon-size-xs;
+    transition: $transition-base;
+  }
+  &:hover { transform: translateY(-2px); }
+  &:active { transform: translateY(1px); }
+}
+
+.btn {
+  @include button();
+}
+
+a,
+.btn-link {
+  @include buttonLink($black);
+}
+
+.btn-primary {
+  @include button($soft-color, $primary-color);
+}
+
+.btn-underline {
+  text-transform: uppercase;
+  &::after {
+    top: 15px;
+    left: -68%;
+    content: '';
+    width: 29px;
+    height: 2px;
+    position: relative;
+    background-color: $primary-color;
+  }
+}
+
+.btn-outline {
+  @include buttonOutline();
+}
+
+.btn-disable {
+  color: $white;
+  cursor: not-allowed;
+  background-color: $disable-color;
+  &:hover, &:active, &:focus {
+    transform: none;
+    box-shadow: none;
+  }
+}
+
+.btn {
+  &-sm {
+    padding: 8px 12px;
+    font-size: $font-size-sm;
+  }
+  &-md {
+    padding: 10px 14px;
+    font-size: $font-size-md;
+  }
+  &-lg {
+    padding: 12px 16px;
+    font-size: $font-size-lg;
+  }
+}

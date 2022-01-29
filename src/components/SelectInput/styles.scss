@@ -1,0 +1,11 @@
+@import '../../sass/base/variables';
+
+.SelectInput {
+  gap: 4px;
+  display: grid;
+  padding: 15px;
+  background-color: $white;
+  transition: $transition-base;
+  border-radius: $border-radius;
+  border: $border-width solid $gray-500;
+}

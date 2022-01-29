@@ -1,0 +1,18 @@
+{
+  "fields": [
+    {
+      "uid": "1a",
+      "type": "text",
+      "name": "firstName",
+      "component": "text",
+      "label": "First name"
+    },
+    {
+      "uid": "2a",
+      "type": "text",
+      "name": "lastName",
+      "component": "text",
+      "label": "Last name"
+    }
+  ]
+}

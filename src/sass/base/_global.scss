@@ -30,3 +30,33 @@ img {
   height: 100%;
   object-fit: contain;
 }
+
+.Home {
+  gap: 50px;
+  padding: 25px;
+}
+
+.Example {
+  gap: 20px;
+  & > div {
+    gap: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .Home {
+    padding: 25px 10%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .Home {
+    padding: 50px 20%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .Home {
+    padding: 50px 25%;
+  }
+}
